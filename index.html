@@ -1,0 +1,2495 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_631374055c584d35af9e69271e93e2b9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_631374055c584d35af9e69271e93e2b9" ></div>
+        
+</body>
+<script>    
+    
+            var map_631374055c584d35af9e69271e93e2b9 = L.map(
+                "map_631374055c584d35af9e69271e93e2b9",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7288b1fc480943b5aceb668524aa627b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+            var marker_4a016b233aa14f33bad627a0f681340a = L.marker(
+                [43.6629, -79.3957],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_9edfccf1faaa4b83864cd9dbfbbe1691 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb4929943b994e6498030b211f256f92 = $(`<div id="html_fb4929943b994e6498030b211f256f92" style="width: 100.0%; height: 100.0%;">Toronto</div>`)[0];
+            popup_9edfccf1faaa4b83864cd9dbfbbe1691.setContent(html_fb4929943b994e6498030b211f256f92);
+        
+
+        marker_4a016b233aa14f33bad627a0f681340a.bindPopup(popup_9edfccf1faaa4b83864cd9dbfbbe1691)
+        ;
+
+        
+    
+    
+            var marker_aeadc7b40a934450afa0b2d1ff5880e5 = L.marker(
+                [43.4723, -80.5449],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_41951ed760ce42c6afd7b0b8457f5a76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d1691534c76496d9abc55d937323314 = $(`<div id="html_5d1691534c76496d9abc55d937323314" style="width: 100.0%; height: 100.0%;">Waterloo</div>`)[0];
+            popup_41951ed760ce42c6afd7b0b8457f5a76.setContent(html_5d1691534c76496d9abc55d937323314);
+        
+
+        marker_aeadc7b40a934450afa0b2d1ff5880e5.bindPopup(popup_41951ed760ce42c6afd7b0b8457f5a76)
+        ;
+
+        
+    
+    
+            var marker_722daba2d1cd4b8db19c9157a0a73d2b = L.marker(
+                [51.5246, -0.134],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_64c90522562249d8a38ac810fdf3429a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35fd47f4b9c647e284a1afaf1b159486 = $(`<div id="html_35fd47f4b9c647e284a1afaf1b159486" style="width: 100.0%; height: 100.0%;">UCL</div>`)[0];
+            popup_64c90522562249d8a38ac810fdf3429a.setContent(html_35fd47f4b9c647e284a1afaf1b159486);
+        
+
+        marker_722daba2d1cd4b8db19c9157a0a73d2b.bindPopup(popup_64c90522562249d8a38ac810fdf3429a)
+        ;
+
+        
+    
+    
+            var marker_a7103934bbcc4afc80576f9398785ef2 = L.marker(
+                [40.102, -88.2272],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_b0e82d5c420144ef9b4d144156619825 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c3cb368b7b14fac9d9c9151c3a14cd0 = $(`<div id="html_6c3cb368b7b14fac9d9c9151c3a14cd0" style="width: 100.0%; height: 100.0%;">UIUC</div>`)[0];
+            popup_b0e82d5c420144ef9b4d144156619825.setContent(html_6c3cb368b7b14fac9d9c9151c3a14cd0);
+        
+
+        marker_a7103934bbcc4afc80576f9398785ef2.bindPopup(popup_b0e82d5c420144ef9b4d144156619825)
+        ;
+
+        
+    
+    
+            var marker_98e5bd438f68462e93016ed7c6d10326 = L.marker(
+                [49.2606, -123.24600000000001],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_a9cdcc84767e485b850cdbe04a3b1671 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20b5803bdb5946c7a8f0c7d1f6c6a3c6 = $(`<div id="html_20b5803bdb5946c7a8f0c7d1f6c6a3c6" style="width: 100.0%; height: 100.0%;">UBC</div>`)[0];
+            popup_a9cdcc84767e485b850cdbe04a3b1671.setContent(html_20b5803bdb5946c7a8f0c7d1f6c6a3c6);
+        
+
+        marker_98e5bd438f68462e93016ed7c6d10326.bindPopup(popup_a9cdcc84767e485b850cdbe04a3b1671)
+        ;
+
+        
+    
+    
+            var marker_63890f1665d744ffa7da7a156c46e8aa = L.marker(
+                [-37.9139, 145.1317],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_7281c682e04e4a198910bcd8507ee3e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea4062db674c4bdcb7e07bbaab9767e1 = $(`<div id="html_ea4062db674c4bdcb7e07bbaab9767e1" style="width: 100.0%; height: 100.0%;">Monash</div>`)[0];
+            popup_7281c682e04e4a198910bcd8507ee3e2.setContent(html_ea4062db674c4bdcb7e07bbaab9767e1);
+        
+
+        marker_63890f1665d744ffa7da7a156c46e8aa.bindPopup(popup_7281c682e04e4a198910bcd8507ee3e2)
+        ;
+
+        
+    
+    
+            var marker_6e86ed33beb14556987e1c9ffed70a70 = L.marker(
+                [40.7295, -73.9965],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_f750179e7fd44111afad0c30c5d91e59 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e8f29931dc6486784e17acd739ae3ee = $(`<div id="html_7e8f29931dc6486784e17acd739ae3ee" style="width: 100.0%; height: 100.0%;">NYU</div>`)[0];
+            popup_f750179e7fd44111afad0c30c5d91e59.setContent(html_7e8f29931dc6486784e17acd739ae3ee);
+        
+
+        marker_6e86ed33beb14556987e1c9ffed70a70.bindPopup(popup_f750179e7fd44111afad0c30c5d91e59)
+        ;
+
+        
+    
+    
+            var marker_55d3eecfc29f48a9b9ad0b463a44f1a7 = L.marker(
+                [34.0224, -118.2851],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_667880ff42ca4c5c8f179144eae7f8c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37d4ce9e830c4a0ea04651252185c7cd = $(`<div id="html_37d4ce9e830c4a0ea04651252185c7cd" style="width: 100.0%; height: 100.0%;">USC</div>`)[0];
+            popup_667880ff42ca4c5c8f179144eae7f8c5.setContent(html_37d4ce9e830c4a0ea04651252185c7cd);
+        
+
+        marker_55d3eecfc29f48a9b9ad0b463a44f1a7.bindPopup(popup_667880ff42ca4c5c8f179144eae7f8c5)
+        ;
+
+        
+    
+    
+            var marker_1e7b4fb9c077410e9c12dd013adf9035 = L.marker(
+                [53.3809, -1.4879],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_d820e3d14fef463986d690a7197b31fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d6bdf147ba84138805365964d04e1d5 = $(`<div id="html_2d6bdf147ba84138805365964d04e1d5" style="width: 100.0%; height: 100.0%;">Sheffield</div>`)[0];
+            popup_d820e3d14fef463986d690a7197b31fe.setContent(html_2d6bdf147ba84138805365964d04e1d5);
+        
+
+        marker_1e7b4fb9c077410e9c12dd013adf9035.bindPopup(popup_d820e3d14fef463986d690a7197b31fe)
+        ;
+
+        
+    
+    
+            var marker_16d4014678a046ceb30901356ae38ba7 = L.marker(
+                [40.8075, -73.9626],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_e7d6f364851147cba41b6fd8642942c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfd363ad5d2842ab86d963ed2931b619 = $(`<div id="html_bfd363ad5d2842ab86d963ed2931b619" style="width: 100.0%; height: 100.0%;">Columbia</div>`)[0];
+            popup_e7d6f364851147cba41b6fd8642942c5.setContent(html_bfd363ad5d2842ab86d963ed2931b619);
+        
+
+        marker_16d4014678a046ceb30901356ae38ba7.bindPopup(popup_e7d6f364851147cba41b6fd8642942c5)
+        ;
+
+        
+    
+    
+            var marker_fb90d067166b475c9ba5c9d30ba4d728 = L.marker(
+                [53.4668, -2.2339],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_63c37913c1634798b39a7ece7ea87235 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d830765bc744eab9c0c643bc6ffbac4 = $(`<div id="html_3d830765bc744eab9c0c643bc6ffbac4" style="width: 100.0%; height: 100.0%;">Manchester</div>`)[0];
+            popup_63c37913c1634798b39a7ece7ea87235.setContent(html_3d830765bc744eab9c0c643bc6ffbac4);
+        
+
+        marker_fb90d067166b475c9ba5c9d30ba4d728.bindPopup(popup_63c37913c1634798b39a7ece7ea87235)
+        ;
+
+        
+    
+    
+            var marker_89cd9465d63e433589215b7837ed0602 = L.marker(
+                [40.4237, -86.9212],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_dce40dac6ab94139946cf90092981005 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_848903a197e14a0bbe15715a541a9996 = $(`<div id="html_848903a197e14a0bbe15715a541a9996" style="width: 100.0%; height: 100.0%;">Purdue</div>`)[0];
+            popup_dce40dac6ab94139946cf90092981005.setContent(html_848903a197e14a0bbe15715a541a9996);
+        
+
+        marker_89cd9465d63e433589215b7837ed0602.bindPopup(popup_dce40dac6ab94139946cf90092981005)
+        ;
+
+        
+    
+    
+            var marker_74f45f0d6f2843dcb56658b332e5149b = L.marker(
+                [40.0068, -83.0306],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_600bb0ee8f4e45939f85a7c4746a411b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_343f8e04f98d4bfe94f7c7546c39c911 = $(`<div id="html_343f8e04f98d4bfe94f7c7546c39c911" style="width: 100.0%; height: 100.0%;">Ohio State</div>`)[0];
+            popup_600bb0ee8f4e45939f85a7c4746a411b.setContent(html_343f8e04f98d4bfe94f7c7546c39c911);
+        
+
+        marker_74f45f0d6f2843dcb56658b332e5149b.bindPopup(popup_600bb0ee8f4e45939f85a7c4746a411b)
+        ;
+
+        
+    
+    
+            var marker_46b424df544e4a01bbd93f608c3e89dd = L.marker(
+                [42.7018, -84.4822],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_83b36d7a3e234372833ff7b50db3a53b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96e064794aa74256ae955561dc50dc78 = $(`<div id="html_96e064794aa74256ae955561dc50dc78" style="width: 100.0%; height: 100.0%;">Michigan State</div>`)[0];
+            popup_83b36d7a3e234372833ff7b50db3a53b.setContent(html_96e064794aa74256ae955561dc50dc78);
+        
+
+        marker_46b424df544e4a01bbd93f608c3e89dd.bindPopup(popup_83b36d7a3e234372833ff7b50db3a53b)
+        ;
+
+        
+    
+    
+            var marker_a61322ffbcf349aab29c764b3d42f777 = L.marker(
+                [-32.0047, 115.8941],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_750a4e5b879546e4bfdc211d555778f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e1545ea7ee243338a66b88b078f1454 = $(`<div id="html_1e1545ea7ee243338a66b88b078f1454" style="width: 100.0%; height: 100.0%;">Curtin</div>`)[0];
+            popup_750a4e5b879546e4bfdc211d555778f0.setContent(html_1e1545ea7ee243338a66b88b078f1454);
+        
+
+        marker_a61322ffbcf349aab29c764b3d42f777.bindPopup(popup_750a4e5b879546e4bfdc211d555778f0)
+        ;
+
+        
+    
+    
+            var marker_d3aa54717b3f423a9e16d47c0abc94e0 = L.marker(
+                [-37.7983, 144.961],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_df4933752a3e42f69de7c4b53a857295 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb107f0ebde442208b3ba2ddbd12cfff = $(`<div id="html_fb107f0ebde442208b3ba2ddbd12cfff" style="width: 100.0%; height: 100.0%;">Melbourne</div>`)[0];
+            popup_df4933752a3e42f69de7c4b53a857295.setContent(html_fb107f0ebde442208b3ba2ddbd12cfff);
+        
+
+        marker_d3aa54717b3f423a9e16d47c0abc94e0.bindPopup(popup_df4933752a3e42f69de7c4b53a857295)
+        ;
+
+        
+    
+    
+            var marker_6263216e07bc4f91a905d95aff34943e = L.marker(
+                [53.5232, -113.5263],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_e98f1645da38417a8e7abd16c12fe210 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdb923c5f82742df846ed0cc7218870b = $(`<div id="html_fdb923c5f82742df846ed0cc7218870b" style="width: 100.0%; height: 100.0%;">Alberta</div>`)[0];
+            popup_e98f1645da38417a8e7abd16c12fe210.setContent(html_fdb923c5f82742df846ed0cc7218870b);
+        
+
+        marker_6263216e07bc4f91a905d95aff34943e.bindPopup(popup_e98f1645da38417a8e7abd16c12fe210)
+        ;
+
+        
+    
+    
+            var marker_33b54672697145acae32e282aafd62f6 = L.marker(
+                [45.5056, -73.6138],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_612112b1465e4ea1a7dd76e53fcb2990 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b89ec21106bd4c76967b02cb2b96b32f = $(`<div id="html_b89ec21106bd4c76967b02cb2b96b32f" style="width: 100.0%; height: 100.0%;">Montreal</div>`)[0];
+            popup_612112b1465e4ea1a7dd76e53fcb2990.setContent(html_b89ec21106bd4c76967b02cb2b96b32f);
+        
+
+        marker_33b54672697145acae32e282aafd62f6.bindPopup(popup_612112b1465e4ea1a7dd76e53fcb2990)
+        ;
+
+        
+    
+    
+            var marker_567258dce646442fb3e3e54f978a128c = L.marker(
+                [53.8067, -1.555],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_2ad25ab25a4a465cbbf82ed089aa61ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff211f02a5d14c49809c4a740756ebcf = $(`<div id="html_ff211f02a5d14c49809c4a740756ebcf" style="width: 100.0%; height: 100.0%;">Leeds</div>`)[0];
+            popup_2ad25ab25a4a465cbbf82ed089aa61ee.setContent(html_ff211f02a5d14c49809c4a740756ebcf);
+        
+
+        marker_567258dce646442fb3e3e54f978a128c.bindPopup(popup_2ad25ab25a4a465cbbf82ed089aa61ee)
+        ;
+
+        
+    
+    
+            var marker_f560eb93846e44b59dff8ce7004566e2 = L.marker(
+                [45.5048, -73.5772],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_5ae2367ff1dd45bfbc28018de791d12e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85c1bf87b7774c47be7dd597242d4ce6 = $(`<div id="html_85c1bf87b7774c47be7dd597242d4ce6" style="width: 100.0%; height: 100.0%;">McGill</div>`)[0];
+            popup_5ae2367ff1dd45bfbc28018de791d12e.setContent(html_85c1bf87b7774c47be7dd597242d4ce6);
+        
+
+        marker_f560eb93846e44b59dff8ce7004566e2.bindPopup(popup_5ae2367ff1dd45bfbc28018de791d12e)
+        ;
+
+        
+    
+    
+            var marker_ce5c9a3ed7054c8282f78a8ff295f2c4 = L.marker(
+                [34.0689, -118.4452],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_abf48f69d50644e8a6be48b4a2c2400e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_907ebf5f9702411484117be0ac777edc = $(`<div id="html_907ebf5f9702411484117be0ac777edc" style="width: 100.0%; height: 100.0%;">UCLA</div>`)[0];
+            popup_abf48f69d50644e8a6be48b4a2c2400e.setContent(html_907ebf5f9702411484117be0ac777edc);
+        
+
+        marker_ce5c9a3ed7054c8282f78a8ff295f2c4.bindPopup(popup_abf48f69d50644e8a6be48b4a2c2400e)
+        ;
+
+        
+    
+    
+            var marker_0375e8ff86f84faf90ee7f5fbfd36a96 = L.marker(
+                [-33.9173, 151.2313],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_d0389dd2ae2d45aa91d9d4c7d63df5f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4344566e1b4a47759aaace449c978cbe = $(`<div id="html_4344566e1b4a47759aaace449c978cbe" style="width: 100.0%; height: 100.0%;">UNSW Sydney</div>`)[0];
+            popup_d0389dd2ae2d45aa91d9d4c7d63df5f3.setContent(html_4344566e1b4a47759aaace449c978cbe);
+        
+
+        marker_0375e8ff86f84faf90ee7f5fbfd36a96.bindPopup(popup_d0389dd2ae2d45aa91d9d4c7d63df5f3)
+        ;
+
+        
+    
+    
+            var marker_e7e074e822db4c8bb2ce159b9b441cb0 = L.marker(
+                [49.2781, -122.9199],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_2338a61c0bfc48ac9ecbe5fc62281d18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_733d40ee23f94b208fbebef8428f3e6f = $(`<div id="html_733d40ee23f94b208fbebef8428f3e6f" style="width: 100.0%; height: 100.0%;">Simon Fraser</div>`)[0];
+            popup_2338a61c0bfc48ac9ecbe5fc62281d18.setContent(html_733d40ee23f94b208fbebef8428f3e6f);
+        
+
+        marker_e7e074e822db4c8bb2ce159b9b441cb0.bindPopup(popup_2338a61c0bfc48ac9ecbe5fc62281d18)
+        ;
+
+        
+    
+    
+            var marker_6db4dc66f80c458d99995f59b9fad382 = L.marker(
+                [-33.8886, 151.1873],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_25dc7b4558b3431f8460cec8a0329507 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63f8792b36324a0e9b771594ea0c8e33 = $(`<div id="html_63f8792b36324a0e9b771594ea0c8e33" style="width: 100.0%; height: 100.0%;">Sydney</div>`)[0];
+            popup_25dc7b4558b3431f8460cec8a0329507.setContent(html_63f8792b36324a0e9b771594ea0c8e33);
+        
+
+        marker_6db4dc66f80c458d99995f59b9fad382.bindPopup(popup_25dc7b4558b3431f8460cec8a0329507)
+        ;
+
+        
+    
+    
+            var marker_b0b1c064d3ca4382a63a307f477d891f = L.marker(
+                [45.4231, -75.6831],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_bc8d99d245b848debf7ea6f33e3491ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09ffdefe0c9042eca0ae26af2e48981b = $(`<div id="html_09ffdefe0c9042eca0ae26af2e48981b" style="width: 100.0%; height: 100.0%;">Ottawa</div>`)[0];
+            popup_bc8d99d245b848debf7ea6f33e3491ac.setContent(html_09ffdefe0c9042eca0ae26af2e48981b);
+        
+
+        marker_b0b1c064d3ca4382a63a307f477d891f.bindPopup(popup_bc8d99d245b848debf7ea6f33e3491ac)
+        ;
+
+        
+    
+    
+            var marker_0fc1701c1d3d4b39bc267bbed4fc5901 = L.marker(
+                [52.4508, -1.9305],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_aea38d1bc43d4593bf4f9c248de8d70d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4580d8e1ae5141dd9ba0f133e00de61b = $(`<div id="html_4580d8e1ae5141dd9ba0f133e00de61b" style="width: 100.0%; height: 100.0%;">Birmingham</div>`)[0];
+            popup_aea38d1bc43d4593bf4f9c248de8d70d.setContent(html_4580d8e1ae5141dd9ba0f133e00de61b);
+        
+
+        marker_0fc1701c1d3d4b39bc267bbed4fc5901.bindPopup(popup_aea38d1bc43d4593bf4f9c248de8d70d)
+        ;
+
+        
+    
+    
+            var marker_b766687ff1c54c77b3e87bffbb47b392 = L.marker(
+                [-27.4975, 153.0137],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_cc1795da63074591a32dc8c1cd5cf672 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b27ddd01e31492dacca88e664b9f0fe = $(`<div id="html_2b27ddd01e31492dacca88e664b9f0fe" style="width: 100.0%; height: 100.0%;">Queensland</div>`)[0];
+            popup_cc1795da63074591a32dc8c1cd5cf672.setContent(html_2b27ddd01e31492dacca88e664b9f0fe);
+        
+
+        marker_b766687ff1c54c77b3e87bffbb47b392.bindPopup(popup_cc1795da63074591a32dc8c1cd5cf672)
+        ;
+
+        
+    
+    
+            var marker_a865c1d760a3458c83ffa0b23f964cf8 = L.marker(
+                [37.8719, -122.2585],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_c6170c02997d42e4a6292754ca205f4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_12da196bb3b84df4b331f40fb3f4642e = $(`<div id="html_12da196bb3b84df4b331f40fb3f4642e" style="width: 100.0%; height: 100.0%;">Berkeley</div>`)[0];
+            popup_c6170c02997d42e4a6292754ca205f4f.setContent(html_12da196bb3b84df4b331f40fb3f4642e);
+        
+
+        marker_a865c1d760a3458c83ffa0b23f964cf8.bindPopup(popup_c6170c02997d42e4a6292754ca205f4f)
+        ;
+
+        
+    
+    
+            var marker_e58c04a3d3bc49f78e74960bb183db7f = L.marker(
+                [55.9445, -3.1892],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_0f86703e3f814b30803d34ad26036cf6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_476ff7e4f7d447f6a61c382594f50b81 = $(`<div id="html_476ff7e4f7d447f6a61c382594f50b81" style="width: 100.0%; height: 100.0%;">Edinburgh</div>`)[0];
+            popup_0f86703e3f814b30803d34ad26036cf6.setContent(html_476ff7e4f7d447f6a61c382594f50b81);
+        
+
+        marker_e58c04a3d3bc49f78e74960bb183db7f.bindPopup(popup_0f86703e3f814b30803d34ad26036cf6)
+        ;
+
+        
+    
+    
+            var marker_864c1575822542009c0bd98d89fc9b8a = L.marker(
+                [54.765, -1.5782],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_2a4536db7eef495da5c755d2a3c12ae2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a12315cbe884f7c974823d507ed84fe = $(`<div id="html_0a12315cbe884f7c974823d507ed84fe" style="width: 100.0%; height: 100.0%;">Durham</div>`)[0];
+            popup_2a4536db7eef495da5c755d2a3c12ae2.setContent(html_0a12315cbe884f7c974823d507ed84fe);
+        
+
+        marker_864c1575822542009c0bd98d89fc9b8a.bindPopup(popup_2a4536db7eef495da5c755d2a3c12ae2)
+        ;
+
+        
+    
+    
+            var marker_9fcf644c88694038bb0df30706fe4496 = L.marker(
+                [43.2609, -79.9192],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_c7a2dc1ad59740799c36c694e82ccd17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15d6da0b400548789cd564bc72a74024 = $(`<div id="html_15d6da0b400548789cd564bc72a74024" style="width: 100.0%; height: 100.0%;">McMaster</div>`)[0];
+            popup_c7a2dc1ad59740799c36c694e82ccd17.setContent(html_15d6da0b400548789cd564bc72a74024);
+        
+
+        marker_9fcf644c88694038bb0df30706fe4496.bindPopup(popup_c7a2dc1ad59740799c36c694e82ccd17)
+        ;
+
+        
+    
+    
+            var marker_4d48ff66b11f448faf9748d16afbd6cf = L.marker(
+                [52.3793, -1.5615],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_87376b2a6a9949a5b3055b44983dfe11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_148fa0f1fe224429bbfcdd0b15a2aa04 = $(`<div id="html_148fa0f1fe224429bbfcdd0b15a2aa04" style="width: 100.0%; height: 100.0%;">Warwick</div>`)[0];
+            popup_87376b2a6a9949a5b3055b44983dfe11.setContent(html_148fa0f1fe224429bbfcdd0b15a2aa04);
+        
+
+        marker_4d48ff66b11f448faf9748d16afbd6cf.bindPopup(popup_87376b2a6a9949a5b3055b44983dfe11)
+        ;
+
+        
+    
+    
+            var marker_22f4c41e6dbd459286ae4230cb33822f = L.marker(
+                [55.8721, -4.2882],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_054365e920894bbaa5e494ef15ca0232 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2a8228efa65473298d446f8bc0a63c3 = $(`<div id="html_d2a8228efa65473298d446f8bc0a63c3" style="width: 100.0%; height: 100.0%;">Glasgow</div>`)[0];
+            popup_054365e920894bbaa5e494ef15ca0232.setContent(html_d2a8228efa65473298d446f8bc0a63c3);
+        
+
+        marker_22f4c41e6dbd459286ae4230cb33822f.bindPopup(popup_054365e920894bbaa5e494ef15ca0232)
+        ;
+
+        
+    
+    
+            var marker_8a2564486c7a4c708f1693f332b9ffc6 = L.marker(
+                [53.4048, -2.9653],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_07899d5f13674b6eb1dbdde75cd36f1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd0526d982ad4e0391309066b01f61c7 = $(`<div id="html_cd0526d982ad4e0391309066b01f61c7" style="width: 100.0%; height: 100.0%;">Liverpool</div>`)[0];
+            popup_07899d5f13674b6eb1dbdde75cd36f1c.setContent(html_cd0526d982ad4e0391309066b01f61c7);
+        
+
+        marker_8a2564486c7a4c708f1693f332b9ffc6.bindPopup(popup_07899d5f13674b6eb1dbdde75cd36f1c)
+        ;
+
+        
+    
+    
+            var marker_337463545e324430826272d9671e79ed = L.marker(
+                [-33.8832, 151.2005],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_d3ee644b562f4b0e8c2b40db5829df83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20360b57e5b0487fbc7ed96913b7090d = $(`<div id="html_20360b57e5b0487fbc7ed96913b7090d" style="width: 100.0%; height: 100.0%;">Technology Sydney</div>`)[0];
+            popup_d3ee644b562f4b0e8c2b40db5829df83.setContent(html_20360b57e5b0487fbc7ed96913b7090d);
+        
+
+        marker_337463545e324430826272d9671e79ed.bindPopup(popup_d3ee644b562f4b0e8c2b40db5829df83)
+        ;
+
+        
+    
+    
+            var marker_8aa7b879ff3a4cb0a38a426415d89afe = L.marker(
+                [-33.7738, 151.1126],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_dd89ecf71b484f1aa031f0119f17a140 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_008a04d0f33d448eae6f60aac93af81c = $(`<div id="html_008a04d0f33d448eae6f60aac93af81c" style="width: 100.0%; height: 100.0%;">Macquarie</div>`)[0];
+            popup_dd89ecf71b484f1aa031f0119f17a140.setContent(html_008a04d0f33d448eae6f60aac93af81c);
+        
+
+        marker_8aa7b879ff3a4cb0a38a426415d89afe.bindPopup(popup_dd89ecf71b484f1aa031f0119f17a140)
+        ;
+
+        
+    
+    
+            var marker_99e08074909a4f0897411df58ebd8390 = L.marker(
+                [52.9386, -1.1952],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_01dbf25fb88e406bb7593e0d7f30d1b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a89a1cd704df47739d23e3511a5879b7 = $(`<div id="html_a89a1cd704df47739d23e3511a5879b7" style="width: 100.0%; height: 100.0%;">Nottingham</div>`)[0];
+            popup_01dbf25fb88e406bb7593e0d7f30d1b0.setContent(html_a89a1cd704df47739d23e3511a5879b7);
+        
+
+        marker_99e08074909a4f0897411df58ebd8390.bindPopup(popup_01dbf25fb88e406bb7593e0d7f30d1b0)
+        ;
+
+        
+    
+    
+            var marker_54c23c78228c4778a09d8ea814960905 = L.marker(
+                [51.4988, -0.1749],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_f532a119ff5546efaf4e179c0f7122ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8586f26b02e343b78dcbebc49f13fdee = $(`<div id="html_8586f26b02e343b78dcbebc49f13fdee" style="width: 100.0%; height: 100.0%;">Imperial</div>`)[0];
+            popup_f532a119ff5546efaf4e179c0f7122ea.setContent(html_8586f26b02e343b78dcbebc49f13fdee);
+        
+
+        marker_54c23c78228c4778a09d8ea814960905.bindPopup(popup_f532a119ff5546efaf4e179c0f7122ea)
+        ;
+
+        
+    
+    
+            var marker_02914ea378604065ac34227a9b0a171c = L.marker(
+                [-27.4728, 153.0235],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_596cdd6803184ba4a0c3e21634ccfff3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cd4eb5bf78f4f4b926009c16ad41d00 = $(`<div id="html_8cd4eb5bf78f4f4b926009c16ad41d00" style="width: 100.0%; height: 100.0%;">QUT</div>`)[0];
+            popup_596cdd6803184ba4a0c3e21634ccfff3.setContent(html_8cd4eb5bf78f4f4b926009c16ad41d00);
+        
+
+        marker_02914ea378604065ac34227a9b0a171c.bindPopup(popup_596cdd6803184ba4a0c3e21634ccfff3)
+        ;
+
+        
+    
+    
+            var marker_a52de12c58484f98ad082a400156d15c = L.marker(
+                [42.4534, -76.4735],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_96f72d17beca48e1bdff40e710b968d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_323d2273344449ea881eeecbb0bfc04c = $(`<div id="html_323d2273344449ea881eeecbb0bfc04c" style="width: 100.0%; height: 100.0%;">Cornell</div>`)[0];
+            popup_96f72d17beca48e1bdff40e710b968d3.setContent(html_323d2273344449ea881eeecbb0bfc04c);
+        
+
+        marker_a52de12c58484f98ad082a400156d15c.bindPopup(popup_96f72d17beca48e1bdff40e710b968d3)
+        ;
+
+        
+    
+    
+            var marker_cb194236bf6545fb9fdef325a7dade1b = L.marker(
+                [39.9522, -75.1932],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_a4887d00fd4446c68f75dc81f606b15f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a77262f88a44a559cc6fbeba00b7219 = $(`<div id="html_8a77262f88a44a559cc6fbeba00b7219" style="width: 100.0%; height: 100.0%;">Penn</div>`)[0];
+            popup_a4887d00fd4446c68f75dc81f606b15f.setContent(html_8a77262f88a44a559cc6fbeba00b7219);
+        
+
+        marker_cb194236bf6545fb9fdef325a7dade1b.bindPopup(popup_a4887d00fd4446c68f75dc81f606b15f)
+        ;
+
+        
+    
+    
+            var marker_93f1ae5e463d41d685ed70f144df7333 = L.marker(
+                [51.4584, -2.603],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_595865250d004f598fa9c060832d1f9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b373f7b3a984d30a726a6ca27c96769 = $(`<div id="html_4b373f7b3a984d30a726a6ca27c96769" style="width: 100.0%; height: 100.0%;">Bristol</div>`)[0];
+            popup_595865250d004f598fa9c060832d1f9a.setContent(html_4b373f7b3a984d30a726a6ca27c96769);
+        
+
+        marker_93f1ae5e463d41d685ed70f144df7333.bindPopup(popup_595865250d004f598fa9c060832d1f9a)
+        ;
+
+        
+    
+    
+            var marker_6eb27d4ff7de44e49ce1393da852e461 = L.marker(
+                [-34.9206, 138.6062],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_2a5573fcd014446985b08e654e8efaab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93b836696aa843aa84ed52a3c0e2c78f = $(`<div id="html_93b836696aa843aa84ed52a3c0e2c78f" style="width: 100.0%; height: 100.0%;">Adelaide</div>`)[0];
+            popup_2a5573fcd014446985b08e654e8efaab.setContent(html_93b836696aa843aa84ed52a3c0e2c78f);
+        
+
+        marker_6eb27d4ff7de44e49ce1393da852e461.bindPopup(popup_2a5573fcd014446985b08e654e8efaab)
+        ;
+
+        
+    
+    
+            var marker_e669c06a37f64556a9216e47f86dec49 = L.marker(
+                [50.9351, -1.3958],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_5359017cee854d0e89b64d3b13857971 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32ae5fb8d3be498eb18aa8c7d0c61c4a = $(`<div id="html_32ae5fb8d3be498eb18aa8c7d0c61c4a" style="width: 100.0%; height: 100.0%;">Southampton</div>`)[0];
+            popup_5359017cee854d0e89b64d3b13857971.setContent(html_32ae5fb8d3be498eb18aa8c7d0c61c4a);
+        
+
+        marker_e669c06a37f64556a9216e47f86dec49.bindPopup(popup_5359017cee854d0e89b64d3b13857971)
+        ;
+
+        
+    
+    
+            var marker_7e569e51c2ec4670bff002ccf803cb05 = L.marker(
+                [51.0776, -114.1407],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_eed29d2e436248a7bfdbdcb3bc22238b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b50cb5cd338439c9e92ab95465b7cf5 = $(`<div id="html_6b50cb5cd338439c9e92ab95465b7cf5" style="width: 100.0%; height: 100.0%;">Calgary</div>`)[0];
+            popup_eed29d2e436248a7bfdbdcb3bc22238b.setContent(html_6b50cb5cd338439c9e92ab95465b7cf5);
+        
+
+        marker_7e569e51c2ec4670bff002ccf803cb05.bindPopup(popup_eed29d2e436248a7bfdbdcb3bc22238b)
+        ;
+
+        
+    
+    
+            var marker_8761bb0f244d40e3ba18b1a889eb688b = L.marker(
+                [53.9461, -1.0518],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_fb089fcacb004054905b532a4b6869e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33ce8c1b93a143d0958aa328ee7cd893 = $(`<div id="html_33ce8c1b93a143d0958aa328ee7cd893" style="width: 100.0%; height: 100.0%;">York</div>`)[0];
+            popup_fb089fcacb004054905b532a4b6869e4.setContent(html_33ce8c1b93a143d0958aa328ee7cd893);
+        
+
+        marker_8761bb0f244d40e3ba18b1a889eb688b.bindPopup(popup_fb089fcacb004054905b532a4b6869e4)
+        ;
+
+        
+    
+    
+            var marker_c0d14df7b1bf477986dccc34a24df2fc = L.marker(
+                [50.7371, -3.5351],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_b88257e42c18498284f48d4dfc5b07e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c9fed29dc3548ee952847a7fc2b8f03 = $(`<div id="html_4c9fed29dc3548ee952847a7fc2b8f03" style="width: 100.0%; height: 100.0%;">Exeter</div>`)[0];
+            popup_b88257e42c18498284f48d4dfc5b07e0.setContent(html_4c9fed29dc3548ee952847a7fc2b8f03);
+        
+
+        marker_c0d14df7b1bf477986dccc34a24df2fc.bindPopup(popup_b88257e42c18498284f48d4dfc5b07e0)
+        ;
+
+        
+    
+    
+            var marker_d7dbc9ccb61947058a405c2aa914ee1b = L.marker(
+                [54.9792, -1.6147],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_87dceef934d74906b8879850cdd2641c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d142f862d24548d8952042871afd0670 = $(`<div id="html_d142f862d24548d8952042871afd0670" style="width: 100.0%; height: 100.0%;">Newcastle</div>`)[0];
+            popup_87dceef934d74906b8879850cdd2641c.setContent(html_d142f862d24548d8952042871afd0670);
+        
+
+        marker_d7dbc9ccb61947058a405c2aa914ee1b.bindPopup(popup_87dceef934d74906b8879850cdd2641c)
+        ;
+
+        
+    
+    
+            var marker_3bbef8a80fa643a181a7b3cd16ff7b30 = L.marker(
+                [50.8671, -0.0879],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_4bca3c9e66f046a9a52a72cf67f956fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1d3a94ea5234aa7ba01f3bde2a08072 = $(`<div id="html_b1d3a94ea5234aa7ba01f3bde2a08072" style="width: 100.0%; height: 100.0%;">Sussex</div>`)[0];
+            popup_4bca3c9e66f046a9a52a72cf67f956fa.setContent(html_b1d3a94ea5234aa7ba01f3bde2a08072);
+        
+
+        marker_3bbef8a80fa643a181a7b3cd16ff7b30.bindPopup(popup_4bca3c9e66f046a9a52a72cf67f956fa)
+        ;
+
+        
+    
+    
+            var marker_36e1e0218ce24370bb5708afd64529d2 = L.marker(
+                [-35.2777, 149.1185],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_06c13d0a8ce14ffd9750f3caceb94b4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed863f4c419b474db0c23b71709f3ace = $(`<div id="html_ed863f4c419b474db0c23b71709f3ace" style="width: 100.0%; height: 100.0%;">ANU</div>`)[0];
+            popup_06c13d0a8ce14ffd9750f3caceb94b4d.setContent(html_ed863f4c419b474db0c23b71709f3ace);
+        
+
+        marker_36e1e0218ce24370bb5708afd64529d2.bindPopup(popup_06c13d0a8ce14ffd9750f3caceb94b4d)
+        ;
+
+        
+    
+    
+            var marker_cd5563afd93844a1a71fcf14b9540d78 = L.marker(
+                [51.5115, -0.11599999999999999],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_e49d8ea2f4e1465fa913b8647a514512 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6741478b3214b0c875d7537ebaed1fc = $(`<div id="html_c6741478b3214b0c875d7537ebaed1fc" style="width: 100.0%; height: 100.0%;">KCL</div>`)[0];
+            popup_e49d8ea2f4e1465fa913b8647a514512.setContent(html_c6741478b3214b0c875d7537ebaed1fc);
+        
+
+        marker_cd5563afd93844a1a71fcf14b9540d78.bindPopup(popup_e49d8ea2f4e1465fa913b8647a514512)
+        ;
+
+        
+    
+    
+            var marker_404c2bdd77674812a246bf17646112ec = L.marker(
+                [42.376999999999995, -71.1167],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_b6603ab8e1bc48a7b1569278761a0592 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a23653ef31774086b9b3e167b445b968 = $(`<div id="html_a23653ef31774086b9b3e167b445b968" style="width: 100.0%; height: 100.0%;">Harvard</div>`)[0];
+            popup_b6603ab8e1bc48a7b1569278761a0592.setContent(html_a23653ef31774086b9b3e167b445b968);
+        
+
+        marker_404c2bdd77674812a246bf17646112ec.bindPopup(popup_b6603ab8e1bc48a7b1569278761a0592)
+        ;
+
+        
+    
+    
+            var marker_da1a4e3c63404cd48941a5a23c08cc2f = L.marker(
+                [-31.9801, 115.8179],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_185f36ddbfae49649ca8c59e819fbc21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78055d34c67d4b4483b6506a9317331e = $(`<div id="html_78055d34c67d4b4483b6506a9317331e" style="width: 100.0%; height: 100.0%;">Western Australia</div>`)[0];
+            popup_185f36ddbfae49649ca8c59e819fbc21.setContent(html_78055d34c67d4b4483b6506a9317331e);
+        
+
+        marker_da1a4e3c63404cd48941a5a23c08cc2f.bindPopup(popup_185f36ddbfae49649ca8c59e819fbc21)
+        ;
+
+        
+    
+    
+            var marker_a191946c47204e1f83fc13b5e2ebb7f0 = L.marker(
+                [52.2043, 0.1149],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_730e39da01104010a26b0a034f1d23db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c057acdfa7e64f5496a5706314702ea3 = $(`<div id="html_c057acdfa7e64f5496a5706314702ea3" style="width: 100.0%; height: 100.0%;">Cambridge</div>`)[0];
+            popup_730e39da01104010a26b0a034f1d23db.setContent(html_c057acdfa7e64f5496a5706314702ea3);
+        
+
+        marker_a191946c47204e1f83fc13b5e2ebb7f0.bindPopup(popup_730e39da01104010a26b0a034f1d23db)
+        ;
+
+        
+    
+    
+            var marker_c1fd1ea7499141c7b279b51d46b82d03 = L.marker(
+                [51.5144, -0.1165],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_104a4f9f610a427c92853fe316613237 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a57fe339b1854dc581f26b40eaf169e6 = $(`<div id="html_a57fe339b1854dc581f26b40eaf169e6" style="width: 100.0%; height: 100.0%;">LSE</div>`)[0];
+            popup_104a4f9f610a427c92853fe316613237.setContent(html_a57fe339b1854dc581f26b40eaf169e6);
+        
+
+        marker_c1fd1ea7499141c7b279b51d46b82d03.bindPopup(popup_104a4f9f610a427c92853fe316613237)
+        ;
+
+        
+    
+    
+            var marker_57fcb9e765eb4fcfb400a75e66775c1b = L.marker(
+                [37.4275, -122.1697],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_5ac614e915794f22826c9c2ee3d21749 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_112f2e9574c24005817b69cd6fa3dd4e = $(`<div id="html_112f2e9574c24005817b69cd6fa3dd4e" style="width: 100.0%; height: 100.0%;">Stanford</div>`)[0];
+            popup_5ac614e915794f22826c9c2ee3d21749.setContent(html_112f2e9574c24005817b69cd6fa3dd4e);
+        
+
+        marker_57fcb9e765eb4fcfb400a75e66775c1b.bindPopup(popup_5ac614e915794f22826c9c2ee3d21749)
+        ;
+
+        
+    
+    
+            var marker_f1932f2f598e4c7e91506db48a3a48fa = L.marker(
+                [-35.2384, 149.0843],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_645fc0bd231340cf89373e8d7eafa26f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfd2c11fd9644f9cb789a644a1b718f2 = $(`<div id="html_bfd2c11fd9644f9cb789a644a1b718f2" style="width: 100.0%; height: 100.0%;">Canberra</div>`)[0];
+            popup_645fc0bd231340cf89373e8d7eafa26f.setContent(html_bfd2c11fd9644f9cb789a644a1b718f2);
+        
+
+        marker_f1932f2f598e4c7e91506db48a3a48fa.bindPopup(popup_645fc0bd231340cf89373e8d7eafa26f)
+        ;
+
+        
+    
+    
+            var marker_8aa7b8c38acb4943a48609e4d590a9d3 = L.marker(
+                [51.7548, -1.2544],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_5cba550b78ec49bcae58352cd5197884 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be84a6c887344c7eaaa3279fe0356cf7 = $(`<div id="html_be84a6c887344c7eaaa3279fe0356cf7" style="width: 100.0%; height: 100.0%;">Oxford</div>`)[0];
+            popup_5cba550b78ec49bcae58352cd5197884.setContent(html_be84a6c887344c7eaaa3279fe0356cf7);
+        
+
+        marker_8aa7b8c38acb4943a48609e4d590a9d3.bindPopup(popup_5cba550b78ec49bcae58352cd5197884)
+        ;
+
+        
+    
+    
+            var marker_fe11e17adcbd49b599e96430a03884c6 = L.marker(
+                [42.3601, -71.0942],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_b57d118ecdf0417f879f233b06c6ef1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65de565b795246aab705be78a5d69ee2 = $(`<div id="html_65de565b795246aab705be78a5d69ee2" style="width: 100.0%; height: 100.0%;">MIT</div>`)[0];
+            popup_b57d118ecdf0417f879f233b06c6ef1b.setContent(html_65de565b795246aab705be78a5d69ee2);
+        
+
+        marker_fe11e17adcbd49b599e96430a03884c6.bindPopup(popup_b57d118ecdf0417f879f233b06c6ef1b)
+        ;
+
+        
+    
+    
+            var marker_56a8352bd4cb4764a2efb30707fe1178 = L.marker(
+                [41.3163, -72.9223],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_4d8a0c83c0cb4073b1280955a030b24e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7103b16fe6c417fb90f826442ae94d9 = $(`<div id="html_b7103b16fe6c417fb90f826442ae94d9" style="width: 100.0%; height: 100.0%;">Yale</div>`)[0];
+            popup_4d8a0c83c0cb4073b1280955a030b24e.setContent(html_b7103b16fe6c417fb90f826442ae94d9);
+        
+
+        marker_56a8352bd4cb4764a2efb30707fe1178.bindPopup(popup_4d8a0c83c0cb4073b1280955a030b24e)
+        ;
+
+        
+    
+    
+            var marker_145fb5c4c5a9415aae2b4dd5d5a2c013 = L.marker(
+                [56.3417, -2.7943],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_d58c5d84c46a4957a1b0fec4b7f4eaa6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b5f360b8ca94a639966c3edfb78fdb7 = $(`<div id="html_8b5f360b8ca94a639966c3edfb78fdb7" style="width: 100.0%; height: 100.0%;">St Andrews</div>`)[0];
+            popup_d58c5d84c46a4957a1b0fec4b7f4eaa6.setContent(html_8b5f360b8ca94a639966c3edfb78fdb7);
+        
+
+        marker_145fb5c4c5a9415aae2b4dd5d5a2c013.bindPopup(popup_d58c5d84c46a4957a1b0fec4b7f4eaa6)
+        ;
+
+        
+    
+    
+            var marker_557d976a51314a54809a653d9ebdaa56 = L.marker(
+                [41.8268, -71.4025],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_016712745f924ebb8285e7b69593e1c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee40e2ee0d0a48d09bfcccd76c6876c4 = $(`<div id="html_ee40e2ee0d0a48d09bfcccd76c6876c4" style="width: 100.0%; height: 100.0%;">Brown</div>`)[0];
+            popup_016712745f924ebb8285e7b69593e1c2.setContent(html_ee40e2ee0d0a48d09bfcccd76c6876c4);
+        
+
+        marker_557d976a51314a54809a653d9ebdaa56.bindPopup(popup_016712745f924ebb8285e7b69593e1c2)
+        ;
+
+        
+    
+    
+            var marker_a26d562883664575936a35d18660d1df = L.marker(
+                [40.3431, -74.6551],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_f77a27e87e0d40a7822740fb561aa605 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96ac49195615426583e9a61cd7083f65 = $(`<div id="html_96ac49195615426583e9a61cd7083f65" style="width: 100.0%; height: 100.0%;">Princeton</div>`)[0];
+            popup_f77a27e87e0d40a7822740fb561aa605.setContent(html_96ac49195615426583e9a61cd7083f65);
+        
+
+        marker_a26d562883664575936a35d18660d1df.bindPopup(popup_f77a27e87e0d40a7822740fb561aa605)
+        ;
+
+        
+    
+    
+            var marker_12b34fc74fa145feb59daaac0530752c = L.marker(
+                [43.7044, -72.2887],
+                {}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_337b7f03cff44c4a9fea4bc4a37c249b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15cdc96857d84d68a901b184f28ebf58 = $(`<div id="html_15cdc96857d84d68a901b184f28ebf58" style="width: 100.0%; height: 100.0%;">Dartmouth</div>`)[0];
+            popup_337b7f03cff44c4a9fea4bc4a37c249b.setContent(html_15cdc96857d84d68a901b184f28ebf58);
+        
+
+        marker_12b34fc74fa145feb59daaac0530752c.bindPopup(popup_337b7f03cff44c4a9fea4bc4a37c249b)
+        ;
+
+        
+    
+    
+            var circle_d4e88a540938416dab0c90db7e9c73d4 = L.circle(
+                [43.6629, -79.3957],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 173550.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_ac4901d46de546ebb60494da900df905 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85971a74338146beb7c4fb1640818dfe = $(`<div id="html_85971a74338146beb7c4fb1640818dfe" style="width: 100.0%; height: 100.0%;">University: Toronto  Ranking: Top 50  Overseas: 13,845  Domestic: 3,510  Total: 17,355</div>`)[0];
+            popup_ac4901d46de546ebb60494da900df905.setContent(html_85971a74338146beb7c4fb1640818dfe);
+        
+
+        circle_d4e88a540938416dab0c90db7e9c73d4.bindPopup(popup_ac4901d46de546ebb60494da900df905)
+        ;
+
+        
+    
+    
+            var circle_6feac8ccbecf44ea8eb00e884060dcad = L.circle(
+                [43.4723, -80.5449],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 141730.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_0747f3fcf80f49378b6ef5342a5f23e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b64fa41e8013474c995e43843797109e = $(`<div id="html_b64fa41e8013474c995e43843797109e" style="width: 100.0%; height: 100.0%;">University: Waterloo  Ranking: Others  Overseas: 12,593  Domestic: 1,580  Total: 14,173</div>`)[0];
+            popup_0747f3fcf80f49378b6ef5342a5f23e1.setContent(html_b64fa41e8013474c995e43843797109e);
+        
+
+        circle_6feac8ccbecf44ea8eb00e884060dcad.bindPopup(popup_0747f3fcf80f49378b6ef5342a5f23e1)
+        ;
+
+        
+    
+    
+            var circle_0a488d305fda4b6ab0cdd10520d305b3 = L.circle(
+                [51.5246, -0.134],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 106000.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_5b3c98efa0634af89babadb5e18e04bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ee5141110a84b7cb447377b79d1d176 = $(`<div id="html_9ee5141110a84b7cb447377b79d1d176" style="width: 100.0%; height: 100.0%;">University: UCL  Ranking: Top 20  Overseas: 9,930  Domestic: 670  Total: 10,600</div>`)[0];
+            popup_5b3c98efa0634af89babadb5e18e04bc.setContent(html_9ee5141110a84b7cb447377b79d1d176);
+        
+
+        circle_0a488d305fda4b6ab0cdd10520d305b3.bindPopup(popup_5b3c98efa0634af89babadb5e18e04bc)
+        ;
+
+        
+    
+    
+            var circle_056405d21a2d4ab19bbf7f77a08e175e = L.circle(
+                [40.102, -88.2272],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 73250.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_2639402fbd5f4c73b70c01ddf0c8bcd5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39bf4f86e1064b5c8fe8094330c01e58 = $(`<div id="html_39bf4f86e1064b5c8fe8094330c01e58" style="width: 100.0%; height: 100.0%;">University: UIUC  Ranking: Top 100  Overseas: 6,295  Domestic: 1,030  Total: 7,325</div>`)[0];
+            popup_2639402fbd5f4c73b70c01ddf0c8bcd5.setContent(html_39bf4f86e1064b5c8fe8094330c01e58);
+        
+
+        circle_056405d21a2d4ab19bbf7f77a08e175e.bindPopup(popup_2639402fbd5f4c73b70c01ddf0c8bcd5)
+        ;
+
+        
+    
+    
+            var circle_a4be990e0e4c40d3a0047337caab3d49 = L.circle(
+                [49.2606, -123.24600000000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 72590.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_11ebf5f8ed7e4a51bd6cc2f82a8dc44e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0350bf857fe24be492b2a043dee1e53a = $(`<div id="html_0350bf857fe24be492b2a043dee1e53a" style="width: 100.0%; height: 100.0%;">University: UBC  Ranking: Top 100  Overseas: 4,929  Domestic: 2,330  Total: 7,259</div>`)[0];
+            popup_11ebf5f8ed7e4a51bd6cc2f82a8dc44e.setContent(html_0350bf857fe24be492b2a043dee1e53a);
+        
+
+        circle_a4be990e0e4c40d3a0047337caab3d49.bindPopup(popup_11ebf5f8ed7e4a51bd6cc2f82a8dc44e)
+        ;
+
+        
+    
+    
+            var circle_bdb081d5d262438d8b599d54a4844594 = L.circle(
+                [-37.9139, 145.1317],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 69700.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_6fd2bce04fd743619d568dad039eb0f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40ac8d9c5aa24c8e9ddea05f98d9596d = $(`<div id="html_40ac8d9c5aa24c8e9ddea05f98d9596d" style="width: 100.0%; height: 100.0%;">University: Monash  Ranking: Top 100  Overseas: 6,100  Domestic: 870  Total: 6,970</div>`)[0];
+            popup_6fd2bce04fd743619d568dad039eb0f0.setContent(html_40ac8d9c5aa24c8e9ddea05f98d9596d);
+        
+
+        circle_bdb081d5d262438d8b599d54a4844594.bindPopup(popup_6fd2bce04fd743619d568dad039eb0f0)
+        ;
+
+        
+    
+    
+            var circle_2d7e180be1dc480e8d53fe8602d66664 = L.circle(
+                [40.7295, -73.9965],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 66520.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_4f977e2830f642eda618bf99d215e4bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fd4c9b8df5d44c49d08724a2b565b17 = $(`<div id="html_5fd4c9b8df5d44c49d08724a2b565b17" style="width: 100.0%; height: 100.0%;">University: NYU  Ranking: Top 50  Overseas: 5,632  Domestic: 1,020  Total: 6,652</div>`)[0];
+            popup_4f977e2830f642eda618bf99d215e4bf.setContent(html_5fd4c9b8df5d44c49d08724a2b565b17);
+        
+
+        circle_2d7e180be1dc480e8d53fe8602d66664.bindPopup(popup_4f977e2830f642eda618bf99d215e4bf)
+        ;
+
+        
+    
+    
+            var circle_12827b2e5dc447d0a6b8a7b1cd1d010c = L.circle(
+                [34.0224, -118.2851],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 65200.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_1b881f89e0624d2a8cf4256b364f7473 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05ee17192c2847ec8c77d7f4adf722b4 = $(`<div id="html_05ee17192c2847ec8c77d7f4adf722b4" style="width: 100.0%; height: 100.0%;">University: USC  Ranking: Top 200  Overseas: 5,480  Domestic: 1,040  Total: 6,520</div>`)[0];
+            popup_1b881f89e0624d2a8cf4256b364f7473.setContent(html_05ee17192c2847ec8c77d7f4adf722b4);
+        
+
+        circle_12827b2e5dc447d0a6b8a7b1cd1d010c.bindPopup(popup_1b881f89e0624d2a8cf4256b364f7473)
+        ;
+
+        
+    
+    
+            var circle_a3f80d24b3394715865637df1f186a21 = L.circle(
+                [53.3809, -1.4879],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 61040.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_9740fd6c3a4b46f696a7aba4a9236e98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d9d0782217e41338479ff5d473383da = $(`<div id="html_0d9d0782217e41338479ff5d473383da" style="width: 100.0%; height: 100.0%;">University: Sheffield  Ranking: Top 200  Overseas: 5,874  Domestic: 230  Total: 6,104</div>`)[0];
+            popup_9740fd6c3a4b46f696a7aba4a9236e98.setContent(html_0d9d0782217e41338479ff5d473383da);
+        
+
+        circle_a3f80d24b3394715865637df1f186a21.bindPopup(popup_9740fd6c3a4b46f696a7aba4a9236e98)
+        ;
+
+        
+    
+    
+            var circle_a32dcf41b3d540458efec46e1f2317fe = L.circle(
+                [40.8075, -73.9626],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 57480.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_ad3e77aa64404ceb9434834b64f6f4cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11797a5ba3bf405b94e21c64648cfa5d = $(`<div id="html_11797a5ba3bf405b94e21c64648cfa5d" style="width: 100.0%; height: 100.0%;">University: Columbia  Ranking: Top 20  Overseas: 5,228  Domestic: 520  Total: 5,748</div>`)[0];
+            popup_ad3e77aa64404ceb9434834b64f6f4cd.setContent(html_11797a5ba3bf405b94e21c64648cfa5d);
+        
+
+        circle_a32dcf41b3d540458efec46e1f2317fe.bindPopup(popup_ad3e77aa64404ceb9434834b64f6f4cd)
+        ;
+
+        
+    
+    
+            var circle_ab1e672697a54aae926194a0eb4302b1 = L.circle(
+                [53.4668, -2.2339],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 55600.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_4627a1c75a83413d9841f6c705a2709e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98ee7b4ce832466ca8800f4eaf83ebfb = $(`<div id="html_98ee7b4ce832466ca8800f4eaf83ebfb" style="width: 100.0%; height: 100.0%;">University: Manchester  Ranking: Top 100  Overseas: 5,000  Domestic: 560  Total: 5,560</div>`)[0];
+            popup_4627a1c75a83413d9841f6c705a2709e.setContent(html_98ee7b4ce832466ca8800f4eaf83ebfb);
+        
+
+        circle_ab1e672697a54aae926194a0eb4302b1.bindPopup(popup_4627a1c75a83413d9841f6c705a2709e)
+        ;
+
+        
+    
+    
+            var circle_6b69aa48ad814a3290515aaf8e329e2f = L.circle(
+                [40.4237, -86.9212],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 55370.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_6976a5f732104c2b9dadd15febfba2ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45112c0c54c44b3394486cf6731b922d = $(`<div id="html_45112c0c54c44b3394486cf6731b922d" style="width: 100.0%; height: 100.0%;">University: Purdue  Ranking: Top 200  Overseas: 4,617  Domestic: 920  Total: 5,537</div>`)[0];
+            popup_6976a5f732104c2b9dadd15febfba2ed.setContent(html_45112c0c54c44b3394486cf6731b922d);
+        
+
+        circle_6b69aa48ad814a3290515aaf8e329e2f.bindPopup(popup_6976a5f732104c2b9dadd15febfba2ed)
+        ;
+
+        
+    
+    
+            var circle_9f44194d5a39484e8efe792239ba51cb = L.circle(
+                [40.0068, -83.0306],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 55200.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_313fde81bdfa436d8ce29d4a0a8a6185 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98c42d3aa5264c3a97a4755082ac8d32 = $(`<div id="html_98c42d3aa5264c3a97a4755082ac8d32" style="width: 100.0%; height: 100.0%;">University: Ohio State  Ranking: Top 200  Overseas: 4,150  Domestic: 1,370  Total: 5,520</div>`)[0];
+            popup_313fde81bdfa436d8ce29d4a0a8a6185.setContent(html_98c42d3aa5264c3a97a4755082ac8d32);
+        
+
+        circle_9f44194d5a39484e8efe792239ba51cb.bindPopup(popup_313fde81bdfa436d8ce29d4a0a8a6185)
+        ;
+
+        
+    
+    
+            var circle_5fd63822c79441e69a3bc26acd373f9e = L.circle(
+                [42.7018, -84.4822],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 55120.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_190d98ee34184856a1db384c25d7df43 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_266ffa3bde124a678fa7a88935d8978e = $(`<div id="html_266ffa3bde124a678fa7a88935d8978e" style="width: 100.0%; height: 100.0%;">University: Michigan State  Ranking: Top 200  Overseas: 4,412  Domestic: 1,100  Total: 5,512</div>`)[0];
+            popup_190d98ee34184856a1db384c25d7df43.setContent(html_266ffa3bde124a678fa7a88935d8978e);
+        
+
+        circle_5fd63822c79441e69a3bc26acd373f9e.bindPopup(popup_190d98ee34184856a1db384c25d7df43)
+        ;
+
+        
+    
+    
+            var circle_bffb31c735d0493397c11ac4aed5afb5 = L.circle(
+                [-32.0047, 115.8941],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 48200.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_f5c3a158f606411fbd3f770cb7a5a84e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2371fb88f43b4fd68091e14417365d0b = $(`<div id="html_2371fb88f43b4fd68091e14417365d0b" style="width: 100.0%; height: 100.0%;">University: Curtin  Ranking: Others  Overseas: 4,300  Domestic: 520  Total: 4,820</div>`)[0];
+            popup_f5c3a158f606411fbd3f770cb7a5a84e.setContent(html_2371fb88f43b4fd68091e14417365d0b);
+        
+
+        circle_bffb31c735d0493397c11ac4aed5afb5.bindPopup(popup_f5c3a158f606411fbd3f770cb7a5a84e)
+        ;
+
+        
+    
+    
+            var circle_0ad413f65efe491193b64d606160e1a1 = L.circle(
+                [-37.7983, 144.961],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 47100.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_da41c55fc5344056a4e5db5511be3b83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06ff74ce614e40a1b9d5c9837388383b = $(`<div id="html_06ff74ce614e40a1b9d5c9837388383b" style="width: 100.0%; height: 100.0%;">University: Melbourne  Ranking: Top 50  Overseas: 3,900  Domestic: 810  Total: 4,710</div>`)[0];
+            popup_da41c55fc5344056a4e5db5511be3b83.setContent(html_06ff74ce614e40a1b9d5c9837388383b);
+        
+
+        circle_0ad413f65efe491193b64d606160e1a1.bindPopup(popup_da41c55fc5344056a4e5db5511be3b83)
+        ;
+
+        
+    
+    
+            var circle_f003db106ce64de5938cf30c85fa668a = L.circle(
+                [53.5232, -113.5263],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 46920.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_1296d7d74ffe4e57b6bd9d001ad72b75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bff509e3bf1a4e0c864f4c4fb1c7ad18 = $(`<div id="html_bff509e3bf1a4e0c864f4c4fb1c7ad18" style="width: 100.0%; height: 100.0%;">University: Alberta  Ranking: Top 200  Overseas: 3,072  Domestic: 1,620  Total: 4,692</div>`)[0];
+            popup_1296d7d74ffe4e57b6bd9d001ad72b75.setContent(html_bff509e3bf1a4e0c864f4c4fb1c7ad18);
+        
+
+        circle_f003db106ce64de5938cf30c85fa668a.bindPopup(popup_1296d7d74ffe4e57b6bd9d001ad72b75)
+        ;
+
+        
+    
+    
+            var circle_0af85d2cf4dd4aada9e4bd3ad79f5815 = L.circle(
+                [45.5056, -73.6138],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 46800.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_f025ee6784b14291a3a58008975cba4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bdf76b73289c4baebb94e235d0445ee2 = $(`<div id="html_bdf76b73289c4baebb94e235d0445ee2" style="width: 100.0%; height: 100.0%;">University: Montreal  Ranking: Top 200  Overseas: 2,800  Domestic: 1,880  Total: 4,680</div>`)[0];
+            popup_f025ee6784b14291a3a58008975cba4c.setContent(html_bdf76b73289c4baebb94e235d0445ee2);
+        
+
+        circle_0af85d2cf4dd4aada9e4bd3ad79f5815.bindPopup(popup_f025ee6784b14291a3a58008975cba4c)
+        ;
+
+        
+    
+    
+            var circle_902e397bcfa84defad46c944649ce678 = L.circle(
+                [53.8067, -1.555],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 46140.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_a0a75acf3cca47889869fd42ca9cd9ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95deb6fa580f4058812b6572628d24cd = $(`<div id="html_95deb6fa580f4058812b6572628d24cd" style="width: 100.0%; height: 100.0%;">University: Leeds  Ranking: Top 200  Overseas: 4,274  Domestic: 340  Total: 4,614</div>`)[0];
+            popup_a0a75acf3cca47889869fd42ca9cd9ff.setContent(html_95deb6fa580f4058812b6572628d24cd);
+        
+
+        circle_902e397bcfa84defad46c944649ce678.bindPopup(popup_a0a75acf3cca47889869fd42ca9cd9ff)
+        ;
+
+        
+    
+    
+            var circle_b48b762b92fb433b9c51f0c4fca3d7f2 = L.circle(
+                [45.5048, -73.5772],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44890.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_f0394c373d1b422ba8026ef105a10599 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee5115ebae3844df977a33103e83ea84 = $(`<div id="html_ee5115ebae3844df977a33103e83ea84" style="width: 100.0%; height: 100.0%;">University: McGill  Ranking: Top 100  Overseas: 3,119  Domestic: 1,370  Total: 4,489</div>`)[0];
+            popup_f0394c373d1b422ba8026ef105a10599.setContent(html_ee5115ebae3844df977a33103e83ea84);
+        
+
+        circle_b48b762b92fb433b9c51f0c4fca3d7f2.bindPopup(popup_f0394c373d1b422ba8026ef105a10599)
+        ;
+
+        
+    
+    
+            var circle_41013a31b5664b12b49b0d78fdbfc630 = L.circle(
+                [34.0689, -118.4452],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 43660.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_33d7e95a6d9e45c68a93ba204784e3b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ca7b70722594273a116454f220422d4 = $(`<div id="html_2ca7b70722594273a116454f220422d4" style="width: 100.0%; height: 100.0%;">University: UCLA  Ranking: Top 50  Overseas: 3,406  Domestic: 960  Total: 4,366</div>`)[0];
+            popup_33d7e95a6d9e45c68a93ba204784e3b1.setContent(html_2ca7b70722594273a116454f220422d4);
+        
+
+        circle_41013a31b5664b12b49b0d78fdbfc630.bindPopup(popup_33d7e95a6d9e45c68a93ba204784e3b1)
+        ;
+
+        
+    
+    
+            var circle_e143ea1dfe3a4437bdadbf4a134abfcc = L.circle(
+                [-33.9173, 151.2313],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 43500.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_3d1b766645604769b578a9d989e8182f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c0039971a074427b2fcfb7eaf4064ce = $(`<div id="html_7c0039971a074427b2fcfb7eaf4064ce" style="width: 100.0%; height: 100.0%;">University: UNSW Sydney  Ranking: Top 100  Overseas: 3,600  Domestic: 750  Total: 4,350</div>`)[0];
+            popup_3d1b766645604769b578a9d989e8182f.setContent(html_7c0039971a074427b2fcfb7eaf4064ce);
+        
+
+        circle_e143ea1dfe3a4437bdadbf4a134abfcc.bindPopup(popup_3d1b766645604769b578a9d989e8182f)
+        ;
+
+        
+    
+    
+            var circle_43f05a5598cc4b3c8280a299dc811107 = L.circle(
+                [49.2781, -122.9199],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 42320.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_9dd3d366d09c4c65aaf435ed89efd387 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85b1b886eff94562b22f2856245925bb = $(`<div id="html_85b1b886eff94562b22f2856245925bb" style="width: 100.0%; height: 100.0%;">University: Simon Fraser  Ranking: Others  Overseas: 3,012  Domestic: 1,220  Total: 4,232</div>`)[0];
+            popup_9dd3d366d09c4c65aaf435ed89efd387.setContent(html_85b1b886eff94562b22f2856245925bb);
+        
+
+        circle_43f05a5598cc4b3c8280a299dc811107.bindPopup(popup_9dd3d366d09c4c65aaf435ed89efd387)
+        ;
+
+        
+    
+    
+            var circle_31a344026ac54c4492eeadf5fcf2c846 = L.circle(
+                [-33.8886, 151.1873],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 42300.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_96ce50f04a2a4d77b72823eb33ce33a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d34ef01673454c76b2a17d594e7c476e = $(`<div id="html_d34ef01673454c76b2a17d594e7c476e" style="width: 100.0%; height: 100.0%;">University: Sydney  Ranking: Top 100  Overseas: 3,400  Domestic: 830  Total: 4,230</div>`)[0];
+            popup_96ce50f04a2a4d77b72823eb33ce33a9.setContent(html_d34ef01673454c76b2a17d594e7c476e);
+        
+
+        circle_31a344026ac54c4492eeadf5fcf2c846.bindPopup(popup_96ce50f04a2a4d77b72823eb33ce33a9)
+        ;
+
+        
+    
+    
+            var circle_388d5b2f5ade46d7aaa5a2472e46c18c = L.circle(
+                [45.4231, -75.6831],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 40700.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_5bfb20b162da431da529530bab73fd09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c58c1a4050704619a6995a981f9a6b4a = $(`<div id="html_c58c1a4050704619a6995a981f9a6b4a" style="width: 100.0%; height: 100.0%;">University: Ottawa  Ranking: Others  Overseas: 2,200  Domestic: 1,870  Total: 4,070</div>`)[0];
+            popup_5bfb20b162da431da529530bab73fd09.setContent(html_c58c1a4050704619a6995a981f9a6b4a);
+        
+
+        circle_388d5b2f5ade46d7aaa5a2472e46c18c.bindPopup(popup_5bfb20b162da431da529530bab73fd09)
+        ;
+
+        
+    
+    
+            var circle_4f599457e42d41aea02b5201dde39244 = L.circle(
+                [52.4508, -1.9305],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 40500.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_524ff0dd209443f98ea66327dac0d9c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_114b75a335724efdbf19da3a8e269f0d = $(`<div id="html_114b75a335724efdbf19da3a8e269f0d" style="width: 100.0%; height: 100.0%;">University: Birmingham  Ranking: Top 200  Overseas: 3,500  Domestic: 550  Total: 4,050</div>`)[0];
+            popup_524ff0dd209443f98ea66327dac0d9c2.setContent(html_114b75a335724efdbf19da3a8e269f0d);
+        
+
+        circle_4f599457e42d41aea02b5201dde39244.bindPopup(popup_524ff0dd209443f98ea66327dac0d9c2)
+        ;
+
+        
+    
+    
+            var circle_0ed6e0b88307484481d57818ba90cb11 = L.circle(
+                [-27.4975, 153.0137],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38600.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_e2185eeaedd749bd8afb0b00f47b7026 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cda85e560cfa412f94979684ec8dfa98 = $(`<div id="html_cda85e560cfa412f94979684ec8dfa98" style="width: 100.0%; height: 100.0%;">University: Queensland  Ranking: Top 100  Overseas: 3,200  Domestic: 660  Total: 3,860</div>`)[0];
+            popup_e2185eeaedd749bd8afb0b00f47b7026.setContent(html_cda85e560cfa412f94979684ec8dfa98);
+        
+
+        circle_0ed6e0b88307484481d57818ba90cb11.bindPopup(popup_e2185eeaedd749bd8afb0b00f47b7026)
+        ;
+
+        
+    
+    
+            var circle_032b018467f042c39e8f6d87e40f5a4c = L.circle(
+                [37.8719, -122.2585],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38190.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_17672cb5196043b39b3e3bb9c2adbaa7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1008254e2e004ffc906a744c1b82e003 = $(`<div id="html_1008254e2e004ffc906a744c1b82e003" style="width: 100.0%; height: 100.0%;">University: Berkeley  Ranking: Top 50  Overseas: 2,909  Domestic: 910  Total: 3,819</div>`)[0];
+            popup_17672cb5196043b39b3e3bb9c2adbaa7.setContent(html_1008254e2e004ffc906a744c1b82e003);
+        
+
+        circle_032b018467f042c39e8f6d87e40f5a4c.bindPopup(popup_17672cb5196043b39b3e3bb9c2adbaa7)
+        ;
+
+        
+    
+    
+            var circle_6fa44aec0d6a49efb7eb0aae5558899e = L.circle(
+                [55.9445, -3.1892],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 37640.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_f88e7f163f3d435d95fd72a446d07bda = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc3248bc0d6e4753aeeb037d74a24596 = $(`<div id="html_fc3248bc0d6e4753aeeb037d74a24596" style="width: 100.0%; height: 100.0%;">University: Edinburgh  Ranking: Top 50  Overseas: 3,624  Domestic: 140  Total: 3,764</div>`)[0];
+            popup_f88e7f163f3d435d95fd72a446d07bda.setContent(html_fc3248bc0d6e4753aeeb037d74a24596);
+        
+
+        circle_6fa44aec0d6a49efb7eb0aae5558899e.bindPopup(popup_f88e7f163f3d435d95fd72a446d07bda)
+        ;
+
+        
+    
+    
+            var circle_745d24f845b44d2487af1b9d01af683a = L.circle(
+                [54.765, -1.5782],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 36330.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_e8f1bcaf871f47318e57c7c92f071117 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22ff8665edf44260b9fe2e892ad17656 = $(`<div id="html_22ff8665edf44260b9fe2e892ad17656" style="width: 100.0%; height: 100.0%;">University: Durham  Ranking: Others  Overseas: 3,543  Domestic: 90  Total: 3,633</div>`)[0];
+            popup_e8f1bcaf871f47318e57c7c92f071117.setContent(html_22ff8665edf44260b9fe2e892ad17656);
+        
+
+        circle_745d24f845b44d2487af1b9d01af683a.bindPopup(popup_e8f1bcaf871f47318e57c7c92f071117)
+        ;
+
+        
+    
+    
+            var circle_ac71d52d696f4f849b7faa00a92fdf81 = L.circle(
+                [43.2609, -79.9192],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 36080.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_cdde83a411d74771a774c0e12c4e6e4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4dcc02c5b6cc4f448d446b5bb501fdf4 = $(`<div id="html_4dcc02c5b6cc4f448d446b5bb501fdf4" style="width: 100.0%; height: 100.0%;">University: McMaster  Ranking: Top 200  Overseas: 2,068  Domestic: 1,540  Total: 3,608</div>`)[0];
+            popup_cdde83a411d74771a774c0e12c4e6e4f.setContent(html_4dcc02c5b6cc4f448d446b5bb501fdf4);
+        
+
+        circle_ac71d52d696f4f849b7faa00a92fdf81.bindPopup(popup_cdde83a411d74771a774c0e12c4e6e4f)
+        ;
+
+        
+    
+    
+            var circle_59171f3bd7bc4fee8af452da47be55c4 = L.circle(
+                [52.3793, -1.5615],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 36080.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_e5c42a6c69a54d1b880d23284821d763 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ecf87643eeb4eda8f42f45838406329 = $(`<div id="html_1ecf87643eeb4eda8f42f45838406329" style="width: 100.0%; height: 100.0%;">University: Warwick  Ranking: Top 200  Overseas: 3,228  Domestic: 380  Total: 3,608</div>`)[0];
+            popup_e5c42a6c69a54d1b880d23284821d763.setContent(html_1ecf87643eeb4eda8f42f45838406329);
+        
+
+        circle_59171f3bd7bc4fee8af452da47be55c4.bindPopup(popup_e5c42a6c69a54d1b880d23284821d763)
+        ;
+
+        
+    
+    
+            var circle_f6519552b495447dad0da7f728136bf6 = L.circle(
+                [55.8721, -4.2882],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35560.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_5678c87d5e6c418aa09e72c3dd72b885 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_888ebfaf0b75431199a9cf77e6429247 = $(`<div id="html_888ebfaf0b75431199a9cf77e6429247" style="width: 100.0%; height: 100.0%;">University: Glasgow  Ranking: Top 200  Overseas: 3,426  Domestic: 130  Total: 3,556</div>`)[0];
+            popup_5678c87d5e6c418aa09e72c3dd72b885.setContent(html_888ebfaf0b75431199a9cf77e6429247);
+        
+
+        circle_f6519552b495447dad0da7f728136bf6.bindPopup(popup_5678c87d5e6c418aa09e72c3dd72b885)
+        ;
+
+        
+    
+    
+            var circle_7438c6d15c4b4fa18006e9f62b054d4a = L.circle(
+                [53.4048, -2.9653],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 34200.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_050473815d2747818964ea30dde1cbbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4b6c3006e4b4402998a9ba37b383312 = $(`<div id="html_c4b6c3006e4b4402998a9ba37b383312" style="width: 100.0%; height: 100.0%;">University: Liverpool  Ranking: Top 200  Overseas: 3,200  Domestic: 220  Total: 3,420</div>`)[0];
+            popup_050473815d2747818964ea30dde1cbbb.setContent(html_c4b6c3006e4b4402998a9ba37b383312);
+        
+
+        circle_7438c6d15c4b4fa18006e9f62b054d4a.bindPopup(popup_050473815d2747818964ea30dde1cbbb)
+        ;
+
+        
+    
+    
+            var circle_6e77619d564a44e9a20ee550aa0e9e60 = L.circle(
+                [-33.8832, 151.2005],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 33300.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_463e17f6e9f140f89e4312a23f2ff339 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8cb43ea79de4c80862cd4ecab6060e4 = $(`<div id="html_f8cb43ea79de4c80862cd4ecab6060e4" style="width: 100.0%; height: 100.0%;">University: Technology Sydney  Ranking: Others  Overseas: 2,800  Domestic: 530  Total: 3,330</div>`)[0];
+            popup_463e17f6e9f140f89e4312a23f2ff339.setContent(html_f8cb43ea79de4c80862cd4ecab6060e4);
+        
+
+        circle_6e77619d564a44e9a20ee550aa0e9e60.bindPopup(popup_463e17f6e9f140f89e4312a23f2ff339)
+        ;
+
+        
+    
+    
+            var circle_6569e2cbd0444a5b91a9332f7084becb = L.circle(
+                [-33.7738, 151.1126],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 33200.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_508a777ded4f47928326099e043e624d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0ad40c8290d4d2d99acf0d65eda9c89 = $(`<div id="html_d0ad40c8290d4d2d99acf0d65eda9c89" style="width: 100.0%; height: 100.0%;">University: Macquarie  Ranking: Others  Overseas: 2,800  Domestic: 520  Total: 3,320</div>`)[0];
+            popup_508a777ded4f47928326099e043e624d.setContent(html_d0ad40c8290d4d2d99acf0d65eda9c89);
+        
+
+        circle_6569e2cbd0444a5b91a9332f7084becb.bindPopup(popup_508a777ded4f47928326099e043e624d)
+        ;
+
+        
+    
+    
+            var circle_0503f12c7a7149e291dcd6cde451144a = L.circle(
+                [52.9386, -1.1952],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32100.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_b25336a3bf5f4f26916814cd19716756 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51a51b948b4a4f3683e378f59eb87a86 = $(`<div id="html_51a51b948b4a4f3683e378f59eb87a86" style="width: 100.0%; height: 100.0%;">University: Nottingham  Ranking: Top 200  Overseas: 2,800  Domestic: 410  Total: 3,210</div>`)[0];
+            popup_b25336a3bf5f4f26916814cd19716756.setContent(html_51a51b948b4a4f3683e378f59eb87a86);
+        
+
+        circle_0503f12c7a7149e291dcd6cde451144a.bindPopup(popup_b25336a3bf5f4f26916814cd19716756)
+        ;
+
+        
+    
+    
+            var circle_4b5e99ac5f6042c7bb63fe261dca076c = L.circle(
+                [51.4988, -0.1749],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27300.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_5f491299fd1b477980161f4110a53e84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45e5e835e0494eb796bc7b6e0653b3ea = $(`<div id="html_45e5e835e0494eb796bc7b6e0653b3ea" style="width: 100.0%; height: 100.0%;">University: Imperial  Ranking: Top 50  Overseas: 2,400  Domestic: 330  Total: 2,730</div>`)[0];
+            popup_5f491299fd1b477980161f4110a53e84.setContent(html_45e5e835e0494eb796bc7b6e0653b3ea);
+        
+
+        circle_4b5e99ac5f6042c7bb63fe261dca076c.bindPopup(popup_5f491299fd1b477980161f4110a53e84)
+        ;
+
+        
+    
+    
+            var circle_aaa5ce14f77b48afaf1f6f098b2391de = L.circle(
+                [-27.4728, 153.0235],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26900.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_9a0e83d1f7be4a99a0c86e6f69e643ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2343942b978e4b3d8e7b0ea86c707283 = $(`<div id="html_2343942b978e4b3d8e7b0ea86c707283" style="width: 100.0%; height: 100.0%;">University: QUT  Ranking: Others  Overseas: 2,000  Domestic: 690  Total: 2,690</div>`)[0];
+            popup_9a0e83d1f7be4a99a0c86e6f69e643ae.setContent(html_2343942b978e4b3d8e7b0ea86c707283);
+        
+
+        circle_aaa5ce14f77b48afaf1f6f098b2391de.bindPopup(popup_9a0e83d1f7be4a99a0c86e6f69e643ae)
+        ;
+
+        
+    
+    
+            var circle_b6c6a1e2c92a46c5867c0dfb4dfa769a = L.circle(
+                [42.4534, -76.4735],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26810.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_df002c7e700f4af48f55faf894c3a9ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94525b74f1204625b2328ecdc1693763 = $(`<div id="html_94525b74f1204625b2328ecdc1693763" style="width: 100.0%; height: 100.0%;">University: Cornell  Ranking: Top 20  Overseas: 2,221  Domestic: 460  Total: 2,681</div>`)[0];
+            popup_df002c7e700f4af48f55faf894c3a9ec.setContent(html_94525b74f1204625b2328ecdc1693763);
+        
+
+        circle_b6c6a1e2c92a46c5867c0dfb4dfa769a.bindPopup(popup_df002c7e700f4af48f55faf894c3a9ec)
+        ;
+
+        
+    
+    
+            var circle_f1e96f1aae964d139f94ec882b95a062 = L.circle(
+                [39.9522, -75.1932],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25600.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_1c2e16ee6c9742278e08fc90f64cd03f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9024261843f74e7780537c9c69e005d8 = $(`<div id="html_9024261843f74e7780537c9c69e005d8" style="width: 100.0%; height: 100.0%;">University: Penn  Ranking: Top 20  Overseas: 2,030  Domestic: 530  Total: 2,560</div>`)[0];
+            popup_1c2e16ee6c9742278e08fc90f64cd03f.setContent(html_9024261843f74e7780537c9c69e005d8);
+        
+
+        circle_f1e96f1aae964d139f94ec882b95a062.bindPopup(popup_1c2e16ee6c9742278e08fc90f64cd03f)
+        ;
+
+        
+    
+    
+            var circle_b6a77e6695b7438a831a6b03d3df9d79 = L.circle(
+                [51.4584, -2.603],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22800.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_75f62bae2a16439f84392fa862158fea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee21a20e92844f7e80576397d1d14ef7 = $(`<div id="html_ee21a20e92844f7e80576397d1d14ef7" style="width: 100.0%; height: 100.0%;">University: Bristol  Ranking: Top 100  Overseas: 2,100  Domestic: 180  Total: 2,280</div>`)[0];
+            popup_75f62bae2a16439f84392fa862158fea.setContent(html_ee21a20e92844f7e80576397d1d14ef7);
+        
+
+        circle_b6a77e6695b7438a831a6b03d3df9d79.bindPopup(popup_75f62bae2a16439f84392fa862158fea)
+        ;
+
+        
+    
+    
+            var circle_24be8c5108df4437882ab35e35a99207 = L.circle(
+                [-34.9206, 138.6062],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22200.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_d5fc60e3d55648c49be5f09c6a5577cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82368cc9194c4d4a92e2b2b30f756874 = $(`<div id="html_82368cc9194c4d4a92e2b2b30f756874" style="width: 100.0%; height: 100.0%;">University: Adelaide  Ranking: Top 200  Overseas: 1,900  Domestic: 320  Total: 2,220</div>`)[0];
+            popup_d5fc60e3d55648c49be5f09c6a5577cf.setContent(html_82368cc9194c4d4a92e2b2b30f756874);
+        
+
+        circle_24be8c5108df4437882ab35e35a99207.bindPopup(popup_d5fc60e3d55648c49be5f09c6a5577cf)
+        ;
+
+        
+    
+    
+            var circle_4b0450cfd3294ea28c5b22ab91d4759d = L.circle(
+                [50.9351, -1.3958],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22100.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_11be86522973405ea67b57f4dcd04b00 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e4ca42f328c459eab4c51e4b5cd8556 = $(`<div id="html_0e4ca42f328c459eab4c51e4b5cd8556" style="width: 100.0%; height: 100.0%;">University: Southampton  Ranking: Top 200  Overseas: 2,000  Domestic: 210  Total: 2,210</div>`)[0];
+            popup_11be86522973405ea67b57f4dcd04b00.setContent(html_0e4ca42f328c459eab4c51e4b5cd8556);
+        
+
+        circle_4b0450cfd3294ea28c5b22ab91d4759d.bindPopup(popup_11be86522973405ea67b57f4dcd04b00)
+        ;
+
+        
+    
+    
+            var circle_fdc3e816b8e241d3befc19df90a74017 = L.circle(
+                [51.0776, -114.1407],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22000.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_8424752257c944ff9ef2c397136a5b30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e43250d2480c4871b998b1fb0f0725c8 = $(`<div id="html_e43250d2480c4871b998b1fb0f0725c8" style="width: 100.0%; height: 100.0%;">University: Calgary  Ranking: Others  Overseas: 800  Domestic: 1,400  Total: 2,200</div>`)[0];
+            popup_8424752257c944ff9ef2c397136a5b30.setContent(html_e43250d2480c4871b998b1fb0f0725c8);
+        
+
+        circle_fdc3e816b8e241d3befc19df90a74017.bindPopup(popup_8424752257c944ff9ef2c397136a5b30)
+        ;
+
+        
+    
+    
+            var circle_845bd2b3ac7449428603de2da7b6d7fb = L.circle(
+                [53.9461, -1.0518],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21850.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_eccbfd6671ec425a9d2abc1c8e85b497 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b075e7291f44f67a2e1ad9848924e33 = $(`<div id="html_9b075e7291f44f67a2e1ad9848924e33" style="width: 100.0%; height: 100.0%;">University: York  Ranking: Others  Overseas: 2,065  Domestic: 120  Total: 2,185</div>`)[0];
+            popup_eccbfd6671ec425a9d2abc1c8e85b497.setContent(html_9b075e7291f44f67a2e1ad9848924e33);
+        
+
+        circle_845bd2b3ac7449428603de2da7b6d7fb.bindPopup(popup_eccbfd6671ec425a9d2abc1c8e85b497)
+        ;
+
+        
+    
+    
+            var circle_04b294c6a1d34774be9093bb79954cec = L.circle(
+                [50.7371, -3.5351],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21060.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_2120a09ab0df46cbb696154dc31f7a39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_254e4742650648f787237f85b8720806 = $(`<div id="html_254e4742650648f787237f85b8720806" style="width: 100.0%; height: 100.0%;">University: Exeter  Ranking: Top 200  Overseas: 2,016  Domestic: 90  Total: 2,106</div>`)[0];
+            popup_2120a09ab0df46cbb696154dc31f7a39.setContent(html_254e4742650648f787237f85b8720806);
+        
+
+        circle_04b294c6a1d34774be9093bb79954cec.bindPopup(popup_2120a09ab0df46cbb696154dc31f7a39)
+        ;
+
+        
+    
+    
+            var circle_1de374f909a24a6191031f49c9e81040 = L.circle(
+                [54.9792, -1.6147],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19800.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_d71887cb9dbb464f8d9cc8effd0451eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56a8ea7b638f466abc7be8eb3746dbcd = $(`<div id="html_56a8ea7b638f466abc7be8eb3746dbcd" style="width: 100.0%; height: 100.0%;">University: Newcastle  Ranking: Others  Overseas: 1,800  Domestic: 180  Total: 1,980</div>`)[0];
+            popup_d71887cb9dbb464f8d9cc8effd0451eb.setContent(html_56a8ea7b638f466abc7be8eb3746dbcd);
+        
+
+        circle_1de374f909a24a6191031f49c9e81040.bindPopup(popup_d71887cb9dbb464f8d9cc8effd0451eb)
+        ;
+
+        
+    
+    
+            var circle_49d1ed3a4b2442809d7db958acfd3983 = L.circle(
+                [50.8671, -0.0879],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19260.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_fe66c59eced1486ca381ff20471db7ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c05b402ce87d45869decc7e39237787d = $(`<div id="html_c05b402ce87d45869decc7e39237787d" style="width: 100.0%; height: 100.0%;">University: Sussex  Ranking: Others  Overseas: 1,796  Domestic: 130  Total: 1,926</div>`)[0];
+            popup_fe66c59eced1486ca381ff20471db7ec.setContent(html_c05b402ce87d45869decc7e39237787d);
+        
+
+        circle_49d1ed3a4b2442809d7db958acfd3983.bindPopup(popup_fe66c59eced1486ca381ff20471db7ec)
+        ;
+
+        
+    
+    
+            var circle_01649bf565314ddb8b79ec95e14a7ff5 = L.circle(
+                [-35.2777, 149.1185],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18100.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_9fbc6ce590514986ad3f30e7cfa2e145 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49d6660b01f146f99c2bc09bd7dabd33 = $(`<div id="html_49d6660b01f146f99c2bc09bd7dabd33" style="width: 100.0%; height: 100.0%;">University: ANU  Ranking: Top 100  Overseas: 1,500  Domestic: 310  Total: 1,810</div>`)[0];
+            popup_9fbc6ce590514986ad3f30e7cfa2e145.setContent(html_49d6660b01f146f99c2bc09bd7dabd33);
+        
+
+        circle_01649bf565314ddb8b79ec95e14a7ff5.bindPopup(popup_9fbc6ce590514986ad3f30e7cfa2e145)
+        ;
+
+        
+    
+    
+            var circle_b66e7e80a1f74356aefa6ef55c9a2e6a = L.circle(
+                [51.5115, -0.11599999999999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17850.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_0f754551c5d34e36a19b022eb0ee6244 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b39bb45bd6f74f1eb76b9440ee2b6663 = $(`<div id="html_b39bb45bd6f74f1eb76b9440ee2b6663" style="width: 100.0%; height: 100.0%;">University: KCL  Ranking: Top 100  Overseas: 1,295  Domestic: 490  Total: 1,785</div>`)[0];
+            popup_0f754551c5d34e36a19b022eb0ee6244.setContent(html_b39bb45bd6f74f1eb76b9440ee2b6663);
+        
+
+        circle_b66e7e80a1f74356aefa6ef55c9a2e6a.bindPopup(popup_0f754551c5d34e36a19b022eb0ee6244)
+        ;
+
+        
+    
+    
+            var circle_8db0625fa5194c12818016c62a3f78b9 = L.circle(
+                [42.376999999999995, -71.1167],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17710.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_2ab539b63d1047308089d41b7ddc333c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b00607bf1416453496557a42342aaf89 = $(`<div id="html_b00607bf1416453496557a42342aaf89" style="width: 100.0%; height: 100.0%;">University: Harvard  Ranking: Top 20  Overseas: 1,301  Domestic: 470  Total: 1,771</div>`)[0];
+            popup_2ab539b63d1047308089d41b7ddc333c.setContent(html_b00607bf1416453496557a42342aaf89);
+        
+
+        circle_8db0625fa5194c12818016c62a3f78b9.bindPopup(popup_2ab539b63d1047308089d41b7ddc333c)
+        ;
+
+        
+    
+    
+            var circle_a166918d51534ce98271ae9f4a09e213 = L.circle(
+                [-31.9801, 115.8179],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17100.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_813ad4f5ffdf43998624824f58329f3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_836d6750121b4b62a9c957860af72093 = $(`<div id="html_836d6750121b4b62a9c957860af72093" style="width: 100.0%; height: 100.0%;">University: Western Australia  Ranking: Top 200  Overseas: 1,400  Domestic: 310  Total: 1,710</div>`)[0];
+            popup_813ad4f5ffdf43998624824f58329f3c.setContent(html_836d6750121b4b62a9c957860af72093);
+        
+
+        circle_a166918d51534ce98271ae9f4a09e213.bindPopup(popup_813ad4f5ffdf43998624824f58329f3c)
+        ;
+
+        
+    
+    
+            var circle_7a5d3b84b92946ff92bd92412cf9d5f0 = L.circle(
+                [52.2043, 0.1149],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16840.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_9bcf9e76cabe4ffd85409dbc591e5370 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80a802a33d25425e9d8a60ff2b7c2394 = $(`<div id="html_80a802a33d25425e9d8a60ff2b7c2394" style="width: 100.0%; height: 100.0%;">University: Cambridge  Ranking: Top 20  Overseas: 1,464  Domestic: 220  Total: 1,684</div>`)[0];
+            popup_9bcf9e76cabe4ffd85409dbc591e5370.setContent(html_80a802a33d25425e9d8a60ff2b7c2394);
+        
+
+        circle_7a5d3b84b92946ff92bd92412cf9d5f0.bindPopup(popup_9bcf9e76cabe4ffd85409dbc591e5370)
+        ;
+
+        
+    
+    
+            var circle_1e2ae96c93c94f8eb97fbec655e02573 = L.circle(
+                [51.5144, -0.1165],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16320.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_bce03f50c7f545c3a96b32a868d02ce0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f3bfb2cde4741e996f503e2e9a7495e = $(`<div id="html_4f3bfb2cde4741e996f503e2e9a7495e" style="width: 100.0%; height: 100.0%;">University: LSE  Ranking: Top 200  Overseas: 1,482  Domestic: 150  Total: 1,632</div>`)[0];
+            popup_bce03f50c7f545c3a96b32a868d02ce0.setContent(html_4f3bfb2cde4741e996f503e2e9a7495e);
+        
+
+        circle_1e2ae96c93c94f8eb97fbec655e02573.bindPopup(popup_bce03f50c7f545c3a96b32a868d02ce0)
+        ;
+
+        
+    
+    
+            var circle_7ba34e3d75c64f778d8d100b56318257 = L.circle(
+                [37.4275, -122.1697],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16150.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_90e0c0db601b412b8ab0bae4aabe32b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9afbddb5f98849ef8706cfc554387867 = $(`<div id="html_9afbddb5f98849ef8706cfc554387867" style="width: 100.0%; height: 100.0%;">University: Stanford  Ranking: Top 20  Overseas: 1,255  Domestic: 360  Total: 1,615</div>`)[0];
+            popup_90e0c0db601b412b8ab0bae4aabe32b6.setContent(html_9afbddb5f98849ef8706cfc554387867);
+        
+
+        circle_7ba34e3d75c64f778d8d100b56318257.bindPopup(popup_90e0c0db601b412b8ab0bae4aabe32b6)
+        ;
+
+        
+    
+    
+            var circle_e3b35b9e82c54324965d353bc5c6902f = L.circle(
+                [-35.2384, 149.0843],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_cf32fa3c1db942f9a3602cb6d5633412 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a08c9b541b724c1ea1a6c0511d69d3ee = $(`<div id="html_a08c9b541b724c1ea1a6c0511d69d3ee" style="width: 100.0%; height: 100.0%;">University: Canberra  Ranking: Others  Overseas: 1,000  Domestic: 200  Total: 1,200</div>`)[0];
+            popup_cf32fa3c1db942f9a3602cb6d5633412.setContent(html_a08c9b541b724c1ea1a6c0511d69d3ee);
+        
+
+        circle_e3b35b9e82c54324965d353bc5c6902f.bindPopup(popup_cf32fa3c1db942f9a3602cb6d5633412)
+        ;
+
+        
+    
+    
+            var circle_85ab97cc2aff4be5927c293e3f7d5029 = L.circle(
+                [51.7548, -1.2544],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11810.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_a98d4e8a13ff4061be2ed561ecfc9a87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2c4051753994e9d806823164e274c7c = $(`<div id="html_e2c4051753994e9d806823164e274c7c" style="width: 100.0%; height: 100.0%;">University: Oxford  Ranking: Top 20  Overseas: 991  Domestic: 190  Total: 1,181</div>`)[0];
+            popup_a98d4e8a13ff4061be2ed561ecfc9a87.setContent(html_e2c4051753994e9d806823164e274c7c);
+        
+
+        circle_85ab97cc2aff4be5927c293e3f7d5029.bindPopup(popup_a98d4e8a13ff4061be2ed561ecfc9a87)
+        ;
+
+        
+    
+    
+            var circle_61e147c7b1b846a1b477ea6f021a2747 = L.circle(
+                [42.3601, -71.0942],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10890.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_740b32c946024ea79a77cdce0e9a43ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_751602597f894deda2346d55e27dd1f5 = $(`<div id="html_751602597f894deda2346d55e27dd1f5" style="width: 100.0%; height: 100.0%;">University: MIT  Ranking: Top 20  Overseas: 839  Domestic: 250  Total: 1,089</div>`)[0];
+            popup_740b32c946024ea79a77cdce0e9a43ac.setContent(html_751602597f894deda2346d55e27dd1f5);
+        
+
+        circle_61e147c7b1b846a1b477ea6f021a2747.bindPopup(popup_740b32c946024ea79a77cdce0e9a43ac)
+        ;
+
+        
+    
+    
+            var circle_81b383363f3540658faca20d0699491e = L.circle(
+                [41.3163, -72.9223],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10890.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_981a5307d2bf4d4e9c92025bf76a6094 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c88c3c964ebd4dacab8e5db9367788da = $(`<div id="html_c88c3c964ebd4dacab8e5db9367788da" style="width: 100.0%; height: 100.0%;">University: Yale  Ranking: Top 20  Overseas: 799  Domestic: 290  Total: 1,089</div>`)[0];
+            popup_981a5307d2bf4d4e9c92025bf76a6094.setContent(html_c88c3c964ebd4dacab8e5db9367788da);
+        
+
+        circle_81b383363f3540658faca20d0699491e.bindPopup(popup_981a5307d2bf4d4e9c92025bf76a6094)
+        ;
+
+        
+    
+    
+            var circle_9144a377e7374e1da710da22efb3ae54 = L.circle(
+                [56.3417, -2.7943],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9300.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_1ccd9ff900364e30bfc4166b838bddb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_081a23d532fc40c8a8e32c88f0517d06 = $(`<div id="html_081a23d532fc40c8a8e32c88f0517d06" style="width: 100.0%; height: 100.0%;">University: St Andrews  Ranking: Others  Overseas: 900  Domestic: 30  Total: 930</div>`)[0];
+            popup_1ccd9ff900364e30bfc4166b838bddb7.setContent(html_081a23d532fc40c8a8e32c88f0517d06);
+        
+
+        circle_9144a377e7374e1da710da22efb3ae54.bindPopup(popup_1ccd9ff900364e30bfc4166b838bddb7)
+        ;
+
+        
+    
+    
+            var circle_1bd94fb1ddf3471d977d890ea59b0988 = L.circle(
+                [41.8268, -71.4025],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8210.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_4f225965a9e5498da469d753358abb53 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f046c0631bc940759c940356b5ff3f91 = $(`<div id="html_f046c0631bc940759c940356b5ff3f91" style="width: 100.0%; height: 100.0%;">University: Brown  Ranking: Top 100  Overseas: 621  Domestic: 200  Total: 821</div>`)[0];
+            popup_4f225965a9e5498da469d753358abb53.setContent(html_f046c0631bc940759c940356b5ff3f91);
+        
+
+        circle_1bd94fb1ddf3471d977d890ea59b0988.bindPopup(popup_4f225965a9e5498da469d753358abb53)
+        ;
+
+        
+    
+    
+            var circle_d999778bdb1f46a8b8b89a46f0b9a731 = L.circle(
+                [40.3431, -74.6551],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6220.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_f324a0afc83e4e39ad8c54fbccaabb32 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1d4cbe279674c96a44552dffd6e564f = $(`<div id="html_b1d4cbe279674c96a44552dffd6e564f" style="width: 100.0%; height: 100.0%;">University: Princeton  Ranking: Top 20  Overseas: 452  Domestic: 170  Total: 622</div>`)[0];
+            popup_f324a0afc83e4e39ad8c54fbccaabb32.setContent(html_b1d4cbe279674c96a44552dffd6e564f);
+        
+
+        circle_d999778bdb1f46a8b8b89a46f0b9a731.bindPopup(popup_f324a0afc83e4e39ad8c54fbccaabb32)
+        ;
+
+        
+    
+    
+            var circle_565cae7d95f7461684853afadfbe3a6a = L.circle(
+                [43.7044, -72.2887],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5920.0, "stroke": true, "weight": 3}
+            ).addTo(map_631374055c584d35af9e69271e93e2b9);
+        
+    
+        var popup_9d17a513f72c459ab79c27ee2ef8541d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec684fb4a53448c588525464b1e181ab = $(`<div id="html_ec684fb4a53448c588525464b1e181ab" style="width: 100.0%; height: 100.0%;">University: Dartmouth  Ranking: Others  Overseas: 452  Domestic: 140  Total: 592</div>`)[0];
+            popup_9d17a513f72c459ab79c27ee2ef8541d.setContent(html_ec684fb4a53448c588525464b1e181ab);
+        
+
+        circle_565cae7d95f7461684853afadfbe3a6a.bindPopup(popup_9d17a513f72c459ab79c27ee2ef8541d)
+        ;
+
+        
+    
+</script>
